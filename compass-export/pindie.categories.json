@@ -1,36 +1,38 @@
-[{
-  "_id": {
-    "$oid": "66546d7deb3b11b1be9109fd"
-  },
-  "name": "popular"
-},
-{
-  "_id": {
-    "$oid": "66546d97eb3b11b1be9109fe"
-  },
-  "name": "new"
-},
-{
-  "_id": {
-    "$oid": "66546da6eb3b11b1be9109ff"
-  },
-  "name": "TDS"
-},
-{
-  "_id": {
-    "$oid": "66546db1eb3b11b1be910a00"
-  },
-  "name": "shooter"
-},
-{
-  "_id": {
-    "$oid": "66546dbdeb3b11b1be910a01"
-  },
-  "name": "pixel"
-},
-{
-  "_id": {
-    "$oid": "66546dcdeb3b11b1be910a02"
-  },
-  "name": "runner"
-}]
+[
+    {
+        "_id": {
+            "$oid": "662c892b92ede068e35a8a62"
+        },
+        "name": "popular"
+    },
+    {
+        "_id": {
+            "$oid": "662c895b92ede068e35a8a63"
+        },
+        "name": "new"
+    },
+    {
+        "_id": {
+            "$oid": "662c897492ede068e35a8a64"
+        },
+        "name": "TDS"
+    },
+    {
+        "_id": {
+            "$oid": "662c898992ede068e35a8a65"
+        },
+        "name": "shooter"
+    },
+    {
+        "_id": {
+            "$oid": "662c899a92ede068e35a8a66"
+        },
+        "name": "pixel"
+    },
+    {
+        "_id": {
+            "$oid": "662c89b092ede068e35a8a67"
+        },
+        "name": "runner"
+    }
+]

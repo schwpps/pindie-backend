@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
-const userModel = require('./user');
-const categoryModel = require('./category');
+const userModel = require('./users');
+const categoryModel = require('./categories');
 
 const gameSchema = new mongoose.Schema({
     title: {
@@ -52,4 +52,5 @@ gameSchema.statics.findGameByCategory = function (category) {
         });
 };
 
-module.exports = mongoose.model('game', gameSchema);
+const games = mongoose.model('games', gameSchema);
+module.exports = games;
