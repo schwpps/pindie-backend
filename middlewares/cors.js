@@ -1,4 +1,4 @@
-const allowedCors = ['http://localhost:3000/', 'http://localhost:3001/', 'https://schwpps-frontend.nomorepartiesco.ru/'];
+const allowedCors = ['https://schwpps-frontend.nomorepartiesco.ru'];
 function cors(req, res, next) {
     const { origin } = req.headers;
 

@@ -17,7 +17,7 @@ usersRouter.get('/users', findAllUsers, sendAllUsers);
 usersRouter.get('/users/:id', findUserById, sendUserById);
 usersRouter.post('/users', checkEmptyNameAndEmailAndPassword, checkAuth, hashPassword, createUser, sendUserCreated);
 usersRouter.delete('/users/:id', checkAuth, deleteUser, sendUserDeleted);
-usersRouter.put('/users/:id', checkEmptyNameAndEmail, checkAuth, updateUser, sendUserUpdated);
+usersRouter.put('/users/:id', checkEmptyNameAndEmail, checkAuth, findUserById, updateUser, sendUserUpdated);
 usersRouter.get('/me', checkAuth, sendMe);
 
 module.exports = usersRouter;
