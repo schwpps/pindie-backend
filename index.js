@@ -4,7 +4,7 @@ const path = require('path');
 const apiRouter = require('./routes/apiRouter');
 const cookieParser = require('cookie-parser');
 const pagesRouter = require('./routes/pages');
-const cors = require('./middlewares/cors');
+const { cors } = require('./middlewares/cors');
 
 const connectToDatabase = require('./database/connect');
 
