@@ -4,21 +4,21 @@ const {
     findAllGames,
     createGame,
     findGameById,
+    checkIsVoteRequest,
     updateGame,
     deleteGame,
     checkEmptyFields,
-    checkIfUsersAreSafe,
     checkIfCategoriesAvaliable,
+    checkIfUsersAreSafe,
     checkIsGameExists,
-    checkIsVoteRequest,
 } = require('../middlewares/games');
-const { checkAuth } = require('../middlewares/auth');
 const { sendAllGames, sendGameCreated, sendGameById, sendGameUpdated, sendGameDeleted } = require('../controllers/games');
+const { checkAuth } = require('../middlewares/auth');
 
 gamesRouter.get('/games', findAllGames, sendAllGames);
 gamesRouter.get('/games/:id', findGameById, sendGameById);
-gamesRouter.post('/games', findAllGames, checkEmptyFields, checkIsGameExists, checkAuth, createGame, sendGameCreated);
-gamesRouter.delete('/games/:id', checkAuth, deleteGame, sendGameDeleted);
+gamesRouter.post('/games', findAllGames, checkIsGameExists, checkIfCategoriesAvaliable, checkEmptyFields, checkAuth, createGame, sendGameCreated);
+gamesRouter.delete('/games/:id', checkAuth, findGameById, deleteGame, sendGameDeleted);
 gamesRouter.put(
     '/games/:id',
     findGameById,
