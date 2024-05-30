@@ -12,6 +12,7 @@ const login = (req, res) => {
             const token = jwt.sign({ _id: user._id }, 'some-secret-key', {
                 expiresIn: 3600,
             });
+            return { user, token };
         })
         .then(({ user, token }) => {
             res.status(200).send({
